@@ -8,59 +8,47 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      background: linear-gradient(135deg, #ff7a9e, #ff9dbb);
       color: #fff;
-      text-align: center;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 20px;
     }
     .card {
       background: rgba(0,0,0,0.25);
-      padding: 30px 20px;
-      border-radius: 20px;
+      padding: 25px;
+      border-radius: 22px;
       max-width: 420px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+      text-align: center;
     }
     h1 {
-      font-size: 2.2em;
-      margin-bottom: 10px;
+      margin-top: 10px;
+      font-size: 2em;
+    }
+    img {
+      width: 100%;
+      border-radius: 16px;
+      margin: 15px 0;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    p {
+      font-size: 1.05em;
+      line-height: 1.7;
+      margin: 12px 0;
     }
     .heart {
-      font-size: 3em;
-      animation: beat 1.2s infinite;
+      font-size: 2.5em;
+      animation: beat 1.3s infinite;
     }
     @keyframes beat {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-    }
-    p {
-      font-size: 1.1em;
-      line-height: 1.6;
-      margin: 15px 0;
-    }
-    button {
-      background: #fff;
-      color: #ff5f8f;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 30px;
-      font-size: 1em;
-      cursor: pointer;
-      margin-top: 15px;
-      transition: 0.3s;
-    }
-    button:hover {
-      background: #ffe3ec;
-    }
-    #secret {
-      display: none;
-      margin-top: 20px;
-      font-style: italic;
+      50% { transform: scale(1.25); }
     }
     footer {
-      margin-top: 25px;
+      margin-top: 20px;
       font-size: 0.9em;
       opacity: 0.85;
     }
@@ -69,38 +57,52 @@
 <body>
 
   <div class="card">
-    <h1>Dear Darshana 💖</h1>
     <div class="heart">❤️</div>
+    <h1>Dear Darshana</h1>
+
+    <img src="photo.jpg" alt="Us">
 
     <p>
-      Even though miles stand between us,<br>
-      my thoughts always find their way to you.
+      I don’t know how to put everything I feel into words, but I’ll try —
+      because you deserve to know how special you are to me.
     </p>
 
     <p>
-      Every smile of yours makes my day brighter,<br>
-      and every message from you feels like home.
+      Even when we’re far apart, you’re always close to my heart.
+      In the quiet moments, in the busy days, in the smallest things —
+      somehow, you’re always there.
     </p>
 
-    <button onclick="showSecret()">Tap here</button>
+    <p>
+      Your smile has a way of calming me,
+      your voice feels like home,
+      and your presence — even from a distance —
+      makes everything feel a little lighter.
+    </p>
 
-    <div id="secret">
-      <p>
-        No distance is stronger than what I feel for you.<br>
-        Until we meet… you’re always in my heart 💫
-      </p>
-    </div>
+    <p>
+      I know distance isn’t easy.
+      There are days we miss each other more,
+      days we wish time would move faster,
+      and days we just want to be together without screens in between.
+    </p>
+
+    <p>
+      But what we have is real.
+      And real things are worth waiting for.
+    </p>
+
+    <p>
+      Until the day I get to see you again,
+      know this — you are deeply cared for,
+      endlessly thought about,
+      and always loved.
+    </p>
 
     <footer>
       — Made with ❤️ just for you
     </footer>
   </div>
-
-  <script>
-    function showSecret() {
-      document.getElementById("secret").style.display = "block";
-    }
-  </script>
 
 </body>
 </html>
