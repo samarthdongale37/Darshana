@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For Darshana ❤️</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3);
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .card {
+      background: rgba(0,0,0,0.25);
+      padding: 30px 20px;
+      border-radius: 20px;
+      max-width: 420px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    .heart {
+      font-size: 3em;
+      animation: beat 1.2s infinite;
+    }
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+      margin: 15px 0;
+    }
+    button {
+      background: #fff;
+      color: #ff5f8f;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #ffe3ec;
+    }
+    #secret {
+      display: none;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    footer {
+      margin-top: 25px;
+      font-size: 0.9em;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Dear Darshana 💖</h1>
+    <div class="heart">❤️</div>
+
+    <p>
+      Even though miles stand between us,<br>
+      my thoughts always find their way to you.
+    </p>
+
+    <p>
+      Every smile of yours makes my day brighter,<br>
+      and every message from you feels like home.
+    </p>
+
+    <button onclick="showSecret()">Tap here</button>
+
+    <div id="secret">
+      <p>
+        No distance is stronger than what I feel for you.<br>
+        Until we meet… you’re always in my heart 💫
+      </p>
+    </div>
+
+    <footer>
+      — Made with ❤️ just for you
+    </footer>
+  </div>
+
+  <script>
+    function showSecret() {
+      document.getElementById("secret").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
